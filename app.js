@@ -12,7 +12,7 @@ var app = express();
 var compression = require('compression');
 
 app.use(compression()); //use compression
-var sendgrid  = require('sendgrid')('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');
+var sendgrid  = require('sendgrid')(/*sendgrid api_key here*/);
 var sendmail = function(){};
 
 // view engine setup
@@ -35,18 +35,18 @@ app.post('/contactus',function(req,res,next){
   var a = parseInt(req.body.checkHuman_a);
   var b = parseInt(req.body.checkHuman_b);
   var c = parseInt(req.body.senderHuman);
-  console.log(a + ' + '+b+ ' == '+c);
+  console.log(a + ' + ' + b + ' == ' + c);
   if(a+b !== c){
     console.log("Captcha check failed");
-    res.satus = 500;
+    res.status = 500;
     res.send("Not human ?");
   }else{
     var email     = new sendgrid.Email({
-      to:       'brook16haven@gmail.com',
-      toname : 'BrookHaven',
+      to:       'verveconsultancy16@gmail.com',
+      toname : 'VerveConsult',
       from:     req.body.email,
       fromname: req.body.name,
-      subject:  'Contact Us from BrookHaven',
+      subject:  'Contact Us from VerveConsult',
       replyto : req.body.email,
       text:     'Message from '+ req.body.name+' < '+req.body.email+ ' > '
       + ' : ' + req.body.message,
@@ -65,10 +65,10 @@ app.post('/contactus',function(req,res,next){
         var email     = new sendgrid.Email({
           to:       req.body.email,
           toname : req.body.name,
-          from:     'brook16haven@gmail.com',
-          fromname: 'BrookHaven',
-          subject:  'Contact Us from BrookHaven',
-          replyto : 'brook16haven@gmail.com',
+          from:     'verveconsultancy16@gmail.com',
+          fromname: 'VerveConsult',
+          subject:  'Contact Us from VerveConsult',
+          replyto : 'verveconsultancy16@gmail.com',
           text:     'Thank You for contacting us. We will get back to you shortly.',
           html: '<h1> Thank You for contacting us. We will get back to you shortly.</h1> '
         });
