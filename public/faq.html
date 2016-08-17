@@ -96,9 +96,8 @@
         <nav class="navbar navbar-pasific navbar-op navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#page-top">
-                        <img src="assets/img/logo/logo-default.png" alt="logo">
-                        <font face="Verdana" size="5">Verveconsult</font><br />
+                    <a class="navbar-brand" href="#page-top" style="padding:0 0 0 0">
+                        <img id="logores" src="https://res.cloudinary.com/winterfellws/image/upload/c_scale,h_60/v1470217785/Verve_Logo_tjt5nn.jpg" alt="logo">
                     </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -109,8 +108,8 @@
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav mr20">
                         <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a href="#">Home</a></li>
-                                              <!--<li><a href="#contact">Contact</a></li>-->
+                        <li id='home'><a href="../">Home</a></li>
+                        <!--<li><a href="#contact">Contact</a></li>-->
                         <!-- <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock fa-fw"></i>Login</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search fa-fw"></i></a></li> -->
                     </ul>
@@ -388,6 +387,11 @@
         <script src="assets/js/main/ion.rangeSlider.min.js"></script>
         <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/main/main.js"></script>
+        <script>
+          $('#home').click(function(){
+            window.location.href='../';
+          });
+        </script>
 
     </body>
 </html>
