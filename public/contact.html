@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Verve | Careers</title>
+        <title>Verve | Contact</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -110,10 +110,9 @@
                     <ul class="nav navbar-nav mr20">
                         <li class="hidden"><a href="#page-top"></a></li>
                         <li id='home'><a href="../">Home</a></li>
-                        <li><a href="#students" font="strong">Students</a></li>
-                        <li><a href="#experienced">Experienced</a></li>
                         <li id='incubation'><a href="./incubation.html">Incubation Centre</a></li>
-                        <li id='contact'><a href="./contact.html">Contact Us</a></li>
+                        <li id='careers'><a href="./careers.html">Careers</a></li>
+                        <li id='team'><a href="./team">Team</a></li>
                         <!-- <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock fa-fw"></i>Login</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search fa-fw"></i></a></li> -->
                     </ul>
@@ -121,106 +120,114 @@
             </div>
         </nav>
 
+        <!-- Contact Us Area
+        =====================================-->
+        <header class="intro pt100 pl30 pr30 pb50 parallax-window bg-grad-stellar " data-parallax="scroll" data-speed="0.5" style="text-align:left">
+          <div id="contact" class="pt100 pb100" style="background:url(assets/img/bg/bg-pattern-1.jpg) center center repeat #000;">
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-md-6">
+                        <div class="row">
 
-        <!-- Canvas Area
-        ===================================== -->
-        <header class="intro bg-dark3" style="background:url(https://res.cloudinary.com/winterfellws/image/upload/c_scale,h_1250,w_1920/v1470671661/a_yusxky.jpg) 50% 50% no-repeat;">
-            <div class="intro-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="color-pasific alpha10" data-animation="fadeInUp" data-animation-delay="80">
-                                <span class="rotate">CAREERS</span>
-                            </h1>
-                            <p class="intro-text mt25 color-gray animated" data-animation="fadeInUp" data-animation-delay="200">Empowering Knowledge</p>
-                            <a href="#students" class="button button-pasific button-lg hover-ripple-out animated" data-animation="fadeInUp" data-animation-delay="300">Get Started</a>
-                        </div>
-                    </div>
-                </div>
+                            <!-- title start -->
+                            <div class="col-md-12 mb50">
+                                <h1 class="font-size-normal color-black">
+                                    <small class="color-black">Contact Us</small>
+                                    Drop Us a Message
+                                </h1>
+                                <h5 class="color-black">Please feel free to say anything to us. Our staff will reply any message<br>as soon as possible.</h5>
+                            </div>
+                            <!-- title end -->
 
-                <div class="intro-direction">
-                    <a href="#students">
-                        <div class="mouse-icon"><div class="wheel"></div></div>
-                    </a>
-                </div>
+                            <!-- contact info start -->
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <span class="icon-map color-black el-icon2x"></span>
+                                <h5 class="color-black"><strong>Address</strong></h5>
+                                <p class="color-dark">HIG 32, Jaydev Vihar, Bhubaneswar, Odisha - 751013</p>
+                            </div>
 
-            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <span class="icon-megaphone color-black el-icon2x"></span>
+                                <h5 class="color-black"><strong>Phone</strong></h5>
+                                <p class="color-dark">0674-2302051, 9583600777</p>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <span class="icon-envelope color-black el-icon2x"></span>
+                                <h5 class="color-black"><strong>Email</strong></h5>
+                                <p class="color-dark"><a href="mailto:verve@verveconsult.com">verve@verveconsult.com</a></p>
+                            </div>
+                            <!-- contact info end -->
+
+                        </div><!-- row left end -->
+                    </div><!-- col left end -->
+
+                    <div class="col-md-6">
+                        <div class="contact contact-us-one">
+                            <div class="col-sm-12 col-xs-12 text-center mb20">
+                                <h4 class="pb25 bb-solid-1 text-uppercase">
+                                    Get in Touch
+                                    <small class="text-lowercase">Please complete the form and we will get back to you.</small>
+                                </h4>
+                            </div>
+                            <form name="contactform" id="contactForm" method='post' action='/contactus'>
+
+                                <!-- fullname start -->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="name" id="senderName" class="input-md input-rounded form-control" placeholder="fullname" maxlength="100" required>
+                                </div>
+                                <!-- fullname end -->
+
+                                <!-- email start -->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="senderEmail" class="input-md input-rounded form-control" placeholder="email address" maxlength="100" required>
+                                </div>
+                                 <!-- email end -->
+
+                                <!-- website start -->
+                                <!-- <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="url" name="senderWebsite" id="senderWebsite" class="input-md input-rounded form-control" placeholder="http://" maxlength="100">
+                                </div> -->
+                                <!-- website end -->
+
+                                <!-- security start -->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="senderHuman" id="senderHuman" class="input-md input-rounded form-control" placeholder="" required>
+                                    <input type="hidden" name="checkHuman_a" id="checkHuman_a">
+                                    <input type="hidden" name="checkHuman_b" id="checkHuman_b">
+                                </div>
+                                  <!-- security end -->
+
+                                <!-- textarea start -->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="message" id="message" rows="7" required></textarea>
+                                </div>
+                                <!-- textarea end -->
+
+                                <!-- button start -->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" name="sendMessage" id="sendMessage" class="button button-md button-block button-grad-stellar">Send Message</button>
+                                </div>
+                                <!-- button end -->
+
+                                <div id="sendingMessage" class="statusMessage sending-message"><p>Sending your message. Please wait...</p></div>
+                                <div id="successMessage" class="statusMessage success-message"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
+                                <div id="failureMessage" class="statusMessage failure-message"><p>There was a problem sending your message. Please try again.</p></div>
+                                <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+
+                            </form>
+                        </div><!-- div contact end -->
+                    </div><!-- col end -->
+
+                </div><!-- row end -->
+            </div><!-- container end -->
+          </div><!-- section contact end -->
         </header>
-
-
-        <!-- Careers Area
-        ===================================== -->
-        <div id="students" class="pt75 bg-dark3">
-            <div class="container">
-                <div class="row">
-                    <!-- title start -->
-                    <div class="col-md-12 text-center">
-                        <h1 class="font-size-normal color-green">
-                            Students
-                            <small class="heading heading-solid center-block"></small>
-                        </h1>
-                    </div>
-                    <!-- title end -->
-
-                    <!-- title description start -->
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <p class="color-light alpha6">
-                            <span class="lead color-light"><strong>What you learn today will be there for you tomorrow. At Verve, we’re committed to building a better working world for you, for our clients and the wider community.<br>
-                            Whether you are looking for an opportunity to do a Live Project, Internship or from home short term projects or you want to start your career in a firm where you can taste various kinds of roles & responsibilities and then according to your interest and fitment you want to work on that particular role so here we will provide you that opportunity.<br>
-                            As part of the world’s highest performing teams, you’ll deliver values in organisational growth as well as your personal growth. In the process, you’ll have the chance to build relationships with people from all over the world and from a variety of industries, and those relationships will help you to learn, develop and shape your career.Networks and knowledge that will, in fact, last you a lifetime. You’ll be encouraged to find a path that complements your strengths and interests while also improving the way we serve our clients.</strong></span><br><br>
-                            Joining us is about so much more than just the Verve name on your CV.<br>
-                            There is a whole range of opportunities open to you within Verve. Whether you join Research, Finance, Sales & Marketing, you'll enjoy early responsibility, rewarding challenges and exposure to a variety of businesses across a range of sectors.<br>
-                            As well as technical training, you'll be able to develop critical business relationship skills. Teaming, for instance or collaboration across cultures. It's these skills that allow you to become a valuable asset to our high-performing teams.
-                        </p>
-                    </div>
-                    <!-- title description end -->
-                </div>
-            </div>
-        </div>
-
-        <div id="experienced" class="pt75 bg-dark3 pb50">
-            <div class="container">
-                <div class="row">
-                    <!-- title start -->
-                    <div class="col-md-12 text-center">
-                        <h1 class="font-size-normal color-cyan">
-                            Experienced
-                            <small class="heading heading-solid center-block"></small>
-                        </h1>
-                    </div>
-                    <!-- title end -->
-
-                    <!-- title description start -->
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <p class="color-light alpha6">
-                            <span class="lead color-light"><strong>Why you should work with us? We've set out a clear vision of where we expect to be in the year 2020 and have a detailed road map for reaching our objectives. As a result, you will have greater opportunity than ever before to gain insights and experiences that will last you a lifetime. Take charge of your career with rich and varied opportunities to develop a valuable portfolio of skills and knowledge that will stay with you for life.</strong></span><br><br>
-                            Whether you want to change your Job responsibilities, sector or you just want to try to do something different and something exciting & new. Come to us and we guarantee here you will get the real job satisfaction. Because we have more than 17 years of experience as established organisation but we are also inspired by start-ups where employees do not work for a company but they work with a company and each and every employee of the company feels as the owner of the firm so here we will provide that working environment where you will always feel psyched & energetic.
-                        </p>
-                    </div>
-                    <!-- title description end -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Apply Area
-        ===================================== -->
-          <div id="apply" class="parallax-window" data-parallax="scroll" data-speed="0.5" style="background:url(assets/img/bg/bg-pattern-2.png) center center repeat #000; min-height:260px;">
-              <div class="container">
-                  <div class="row pt75">
-                      <div class="col-md-12 text-center">
-                          <h1 class="color-black">
-                              <small class="color-black">Are you ready to be success with us?</small>
-                              Please send your CV to <a href="mailto:hr@verveconsult.com">hr@verveconsult.com</a>
-                          </h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
 
         <!-- footer Area
         ===================================== -->
-        <div id="footer" class="footer-two pt50">
+        <div id="footer" class="footer-two bg-dark3 pt50">
             <div class="container-fluid bb-solid-1">
                 <div class="container pb35">
                     <div class="row">
@@ -246,12 +253,24 @@
                         </div>
                         <!-- footer menu one end -->
 
+                        <!-- footer menu two start -->
+                        <!--div class="col-md-2 col-sm-3 col-xs-4">
+                            <h6 class="font-montserrat text-uppercase color-dark">Learn more</h6>
+                            <ul class="no-icon-list">
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">New Features</a></li>
+                                <li><a href="#">Payment</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer menu two end -->
+
                         <!-- footer menu three start -->
                         <div class="col-md-2 col-sm-3 col-xs-4">
                             <h6 class="font-montserrat text-uppercase color-dark">Support</h6>
                             <ul class="no-icon-list">
-                                <li><a href="./faq.html">FAQs</a></li>
-                                <li><a href="./contact.html">Contact Us</a></li>
+                              <li><a href="./faq.html">FAQs</a></li>
+                              <li><a href="./contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- footer menu three end -->
@@ -295,50 +314,54 @@
             </div><!-- container-fluid end -->
         </div><!-- footer end -->
 
-        <!-- JQuery Core
-        =====================================-->
-        <script src="assets/js/core/jquery.min.js"></script>
-        <script src="assets/js/core/bootstrap.min.js"></script>
 
-        <!-- Magnific Popup
-        =====================================-->
-        <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
+       <!-- JQuery Core
+       =====================================-->
+       <script src="assets/js/core/jquery.min.js"></script>
+       <script src="assets/js/core/bootstrap.min.js"></script>
 
-        <!-- Progress Bars
-        =====================================-->
-        <script src="assets/js/progress-bar/bootstrap-progressbar.js"></script>
-        <script src="assets/js/progress-bar/bootstrap-progressbar-main.js"></script>
+       <!-- Magnific Popup
+       =====================================-->
+       <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+       <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
 
-        <!-- Text Rotator
-        =====================================-->
-        <script src="assets/js/text-rotator/jquery.simple-text-rotator.min.js"></script>
+       <!-- Progress Bars
+       =====================================-->
+       <script src="assets/js/progress-bar/bootstrap-progressbar.js"></script>
+       <script src="assets/js/progress-bar/bootstrap-progressbar-main.js"></script>
 
-        <!-- Particle JS
-        =====================================-->
-        <script src="assets/js/particle/particles.min.js"></script>
-        <script src="assets/js/particle/particles.main2.js"></script>
+       <!-- Text Rotator
+       =====================================-->
+       <script src="assets/js/text-rotator/jquery.simple-text-rotator.min.js"></script>
 
-        <!-- JQuery Main
-        =====================================-->
-        <script src="assets/js/main/jquery.appear.js"></script>
-        <script src="assets/js/main/isotope.pkgd.min.js"></script>
-        <script src="assets/js/main/parallax.min.js"></script>
-        <script src="assets/js/main/jquery.countTo.js"></script>
-        <script src="assets/js/main/owl.carousel.min.js"></script>
-        <script src="assets/js/main/jquery.sticky.js"></script>
-        <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/main/main.js"></script>
-        <script>
-          $('#incubation').click(function(){
-            window.location.href='./incubation.html';
-          });
-          $('#home').click(function(){
-            window.location.href='../';
-          });
-          $('#contact').click(function(){
-            window.location.href='./contact.html';
-          });
-        </script>
-    </body>
+       <!-- Particle JS
+       =====================================-->
+       <script src="assets/js/particle/particles.min.js"></script>
+       <script src="assets/js/particle/particles.main2.js"></script>
+
+       <!-- JQuery Main
+       =====================================-->
+       <script src="assets/js/main/jquery.appear.js"></script>
+       <script src="assets/js/main/isotope.pkgd.min.js"></script>
+       <script src="assets/js/main/parallax.min.js"></script>
+       <script src="assets/js/main/jquery.countTo.js"></script>
+       <script src="assets/js/main/owl.carousel.min.js"></script>
+       <script src="assets/js/main/jquery.sticky.js"></script>
+       <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
+       <script src="assets/js/main/main.js"></script>
+       <script>
+         $('#incubation').click(function(){
+           window.location.href='./incubation.html';
+         });
+         $('#careers').click(function(){
+           window.location.href='./careers.html';
+         });
+         $('#home').click(function(){
+           window.location.href='../';
+         });
+         $('#team').click(function(){
+           window.location.href='./team.html';
+         });
+       </script>
+   </body>
 </html>
